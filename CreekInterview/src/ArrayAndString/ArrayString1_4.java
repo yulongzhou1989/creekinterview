@@ -1,3 +1,4 @@
+package ArrayAndString;
 
 public class ArrayString1_4 {
 

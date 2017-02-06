@@ -1,7 +1,8 @@
+package ArrayAndString;
 
 public class ArrayString1_6 {
 	public static void main(String [] Args){
-		System.out.println(StringCompression("abb"));
+		System.out.println(StringCompression("ab"));
 	}
 	
 	public static String StringCompression(String s){
