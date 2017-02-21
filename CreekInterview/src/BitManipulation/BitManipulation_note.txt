@@ -1,0 +1,14 @@
+BitManipulation:
+
+1. binary nagtive number concat(1, 2e(n-1) - K) k is the abs(Number) like -3 : (8-3) = 5 1101
+2. >> arithmetic shift >>> logic shift
+3. get bit i: (num &(i<<1))
+   set bit i: num|(i<<1)
+   clear bit i: mask = ~(i<<1), num &mask, clear bit after i: num & (1<<i-1), clear bit before i: num & (-1<<i+1)
+   update bit i (set i to value v): num & (~(1<<i)) | v<<i;
+   
+
+1. &->erase or set bit ; |->append bits together
+2. x*2-> <<1 (useful cal float: *2, integer digit is the first digit eg 0.101->1.01 -1 continue)
+3. n&(n-1) == 0 means no digits are same, 100 011 -> n is power of 2. n&(n-1) will clear significant bit in c
+4. 0xaa->10101010 0x55->01010101 get odd and even
