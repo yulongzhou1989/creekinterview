@@ -10,6 +10,7 @@ public class BuildOrder_4_7 {
 
 	}
 	
+	//o(P+D) time
 	Stack<Project> findBuildOrder(String [] projects, String [][]dependencies){
 		Graph graph = buildGraph(projects, dependencies);
 		return orderProjects(graph.getNodes());
