@@ -1,4 +1,4 @@
-package others.backtracking;
+package DPandBacktrack;
 
 import java.util.ArrayList;
 import java.util.Arrays;
